@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmiCalculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h4>Result Analysis</h4>
+        </div>
+        <nav>
+            <ul>
+                <li>Consulttation</li>
+                <li></li>
+            </ul>
+        </nav>
+ </header>
+ <section>
+    <div class="wrapper">
+        <div class="message">
+            <ul id="accordion">    
+                <li>
+                    <input type="radio" name="accordion" id="first">
+                    <label for="first">Underweight </label>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Dolorem facilis excepturi obcaecati itaque iste, voluptas
+                            laborum velit est, tempore quo id natus totam? Culpa hic aliquam et beatae quisquam cumque.</p>
+                    </div>
+               </li>
+            </ul>
+        
+            <ul id="accordion">    
+                <li>
+                    <input type="radio" name="accordion" id="second" >
+                    <label for="second">Healthy Weight</label>
+                   <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Dolorem facilis excepturi obcaecati itaque iste, voluptas
+                            laborum velit est, tempore quo id natus totam? Culpa hic aliquam et beatae quisquam cumque.</p>
+                    </div>
+               </li>
+            </ul>
+            <ul id="accordion">    
+                <li>
+                    <input type="radio" name="accordion" id="third" >
+                    <label for="third">Overweight</span></label>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Dolorem facilis excepturi obcaecati itaque iste, voluptas
+                            laborum velit est, tempore quo id natus totam? Culpa hic aliquam et beatae quisquam cumque.</p>
+                    </div>
+               </li>
+            </ul>
+        
+            <ul id="accordion">    
+                <li>
+                    <input type="radio" name="accordion" id="fourth" >
+                    <label for="fourth">Obese</span></label>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Dolorem facilis excepturi obcaecati itaque iste, voluptas
+                            laborum velit est, tempore quo id natus totam? Culpa hic aliquam et beatae quisquam cumque.</p>
+                    </div>
+               </li>
+            </ul>
+        
+        </div>
+    
+        <div class="calculator-container">
+            <h1>BMI CALCULATOR</h1>
+            <p>Height in meters:</p>
+            <input class="height-input-field" type="text">
+            <p>weight in kilograms:</p>
+            <input class="weight-input-field" type="text"><br>
+            <button class="calculate"> Calculate</button>
+            <div class="result-table">
+                <p class="result-sheet">Hover to see your result</p>
+                <h3 class="result"></h3>
+                <p class="result-statement"></p>
+            </div>
+            
+        </div>
+        
+
+    </div>
+   
+</section>    
+    
+    
+<script src="bmi.js"></script> 
+
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 249, 255);
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 100px;
+}
+
+.header div{
+    height: 125px;
+    width: 20%;
+    background-color: rgb(231, 224, 224);
+    border-left: 2px solid rgb(209, 206, 206);
+    text-align: center;
+    line-height: 180px;
+    font-size: 30px;
+   
+}
+.header nav{
+    height: 100px;
+    width: 80%;
+    background-color: rgb(255, 249, 255);
+    /* border-bottom: 2px solid rgb(209, 206, 206); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    gap: 20px;
+}
+section .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.message{
+    height: 100vh;
+    width: 20%;
+    background-color: rgb(245, 241, 241);
+    border-left: 2px solid rgb(209, 206, 206);
+    padding-left: 20px;
+    text-align: center;
+}
+.calculator-container{
+    height: 600px;
+    width: 80%;
+    background-color: rgb(255, 249, 255);
+    border-bottom: 2px solid rgb(209, 206, 206);
+    text-align: center;
+    padding-top: 20px;
+    line-height: 50px;
+}
+
+.result-table{
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    transition: heigth, width;
+    transition-timing-function: ease-in-out;
+    transition-duration: 4s;
+    outline: 1px solid darkgrey;
+    box-shadow: 2px 2px 2px darkgrey;
+    overflow: hidden;
+
+}
+.result-table:hover{
+    width: 600px;
+    height: auto;
+}
+
+#accordion{
+    margin: 20px auto;
+    width: 250px;
+    background-color: rgb(245, 238, 238);
+    border: 1px solid #faf4f4e1;
+     position: relative;
+     transition: width 2s ease-out 2s;
+}
+#accordion:hover{
+    width: 350px;
+}
+#accordion li{
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    list-style-type: none;
+   }
+
+#accordion label{
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+     align-items: center; 
+    font-size: 18px; 
+    cursor: pointer;
+    color: #d69e2de1;
+}
+#accordion label::before{
+    content: '+';
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+#accordion  input[type="radio"]{
+    display: none;
+}
+
+.content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: justify;
+}
+
+#accordion input[type="radio"]:checked ~ .content{
+    max-height: 400px;
+}
+#accordion input[type="radio"]:checked + label::before{
+    content: '-';
+}
